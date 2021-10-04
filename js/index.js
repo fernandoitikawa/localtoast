@@ -8,6 +8,10 @@ const services = [
         url: 'http://www.quadrix.org.br',
         name: 'Site HTTP',
     },
+    {
+        url: 'https://www.google.com/',
+        name: 'Google',
+    },
 ];
 
 // Start scan of all services.
@@ -24,7 +28,11 @@ async function scan() {
                 const el = document.createElement('div');
                 el.innerText = 'Found: ' + x.name;
                 document.body.appendChild(el);
-            }).catch(e => e);
+            }).catch(e => {
+                const el = document.createElement('div');
+                el.innerText = 'Not found: ' + x.name;
+                document.body.appendChild(el);
+            });
         })
     );
     document.querySelector('h1').innerText = 'Results:';
