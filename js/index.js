@@ -2,7 +2,11 @@
 const services = [
     {
         url: 'http://localhost:10000',
-        name: 'Touch Client',
+        name: 'Touch Client via localhost',
+    },
+    {
+        url: 'http://172.18.0.1:10000',
+        name: 'Touch Client via IP',
     },
     {
         url: 'http://www.quadrix.org.br',
