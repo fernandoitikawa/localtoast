@@ -4,6 +4,10 @@ const services = [
         url: 'http://localhost:10000',
         name: 'Touch Client',
     },
+    {
+        url: 'http://www.quadrix.org.br',
+        name: 'Site HTTP',
+    },
 ];
 
 // Start scan of all services.
